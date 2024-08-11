@@ -1,18 +1,16 @@
 access(all)
 contract TheToDo {
 
-    
-
     access(all)
     struct List {
-        access(all) var id: UInt32
-        access(all) var title: String
-        access(all) var isDone: Bool
+        pub(set) var id: UInt32
+        pub(set) var title: String
+        pub(set) var is_done: Bool
 
-        init(_ id: UInt32, _ title: String, _ isDone: Bool) {
+        init(_ id: UInt32, _ title: String, _ is_done: Bool) {
             self.id = id
             self.title = title
-            self.isDone = isDone
+            self.is_done = is_done
         }
     }
 
